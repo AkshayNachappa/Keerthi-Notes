@@ -21,9 +21,9 @@ def services():
     return render_template("services.html")
     
 
-@app.route("/single")
-def single():
-    return render_template("single.html")
+@app.route("/BE")
+def BE():
+    return render_template("BE-main.html")
 
 
 
