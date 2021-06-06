@@ -32,6 +32,9 @@ def BE_sems(sem_no):
 
     return render_template("BE-sems.html",sem_no=sem_no,links=links,names=names,zip=zip)
 
+if __name__ = '__main__':
+    app.run(debug=False)
+
 
 
 
