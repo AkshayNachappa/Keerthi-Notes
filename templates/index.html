@@ -15,9 +15,7 @@
   <link rel="stylesheet" href="/static/css/magnific-popup.css">
   <link rel="stylesheet" href="/static/css/jquery-ui.css">
   <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
-
-  <link rel="stylesheet" href="/static/css/lightgallery.min.css">    
+  <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">   
 
   <link rel="stylesheet" href="/static/css/bootstrap-datepicker.css">
 
@@ -45,7 +43,9 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-    
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
    
 
     <header class="site-navbar py-3" role="banner">
@@ -66,17 +66,17 @@
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li class="active"><a href="/">Home</a></li>
                 <li class="has-children">
-                  <a href="/single">Notes</a>
+                  <a href="#">Notes</a>
                   <ul class="dropdown">
                     <li class="has-children">
-                      <a href="#">Bachelors of Engg <div><small style="font-size:x-small;">Electronics & Communication</small></div></a>
+                      <a href="/BE">Bachelors of Engg <div><small style="font-size:x-small;">Electronics & Communication</small></div></a>
                       <ul class="dropdown">
-                        <li><a href="#">3<sup>rd</sup> semester</a></li>
-                        <li><a href="#">4<sup>th</sup> semester</a></li>
-                        <li><a href="#">5<sup>th</sup> semester</a></li>
-                        <li><a href="#">6<sup>th</sup> semester</a></li>
-                        <li><a href="#">7<sup>th</sup> semester</a></li>
-                        <li><a href="#">8<sup>th</sup> semester</a></li>
+                        <li><a href="/BE/3">3<sup>rd</sup> semester</a></li>
+                        <li><a href="/BE/4">4<sup>th</sup> semester</a></li>
+                        <li><a href="/BE/5">5<sup>th</sup> semester</a></li>
+                        <li><a href="/BE/6">6<sup>th</sup> semester</a></li>
+                        <li><a href="/BE/7">7<sup>th</sup> semester</a></li>
+                        <li><a href="#" title="Coming Soon">8<sup>th</sup> semester</a></li>
                       </ul>
                     </li>
                     <li class="has-children">
@@ -87,7 +87,7 @@
                     </li>
                   </ul>
                 </li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">About</a></li>
               </ul>
             </nav>
           </div>
@@ -107,7 +107,7 @@
             <div class="image-info">
               <h2 class="mb-4">Bachelors of Engineering</h2>
               <h6 class="text-white h6">Electonics and Communication</h6>
-              <a href="/single" class="btn btn-outline-white py-2 px-4">Notes >></a>
+              <a href="/BE" class="btn btn-outline-white py-2 px-4">Notes >></a>
             </div>
             <img src="/static/images/BE-cover.jpg" alt="Image" class="img-fluid">
           </div>
@@ -118,11 +118,18 @@
             <div class="image-info">
               <h2 class="mb-4">Master of Science</h2>
               <h6 class="text-white h6">Computer Science</h6>
-              <a href="/single" class="btn btn-outline-white py-2 px-4">Coming Soon..</a>
+              <a href="#" class="btn btn-outline-white py-2 px-4">Coming Soon..</a>
             </div>
             <img src="/static/images/MS-cover.jpg" alt="Image" class="img-fluid">
           </div>
         </div>
+      </div>
+    </div>
+    <div class="footer py-4">
+      <div class="container-fluid text-center">
+        <p>
+          &#10084;
+        </p>
       </div>
     </div>
     
@@ -144,16 +151,10 @@
   <script src="/static/js/aos.js"></script>
 
   <script src="/static/js/picturefill.min.js"></script>
-  <script src="/static/js/lightgallery-all.min.js"></script>
   <script src="/static/js/jquery.mousewheel.min.js"></script>
 
   <script src="/static/js/main.js"></script>
   
-  <script>
-    $(document).ready(function(){
-      $('#lightgallery').lightGallery();
-    });
-  </script>
 
 </body>
 </html>

@@ -1239,8 +1239,213 @@ img {
   -webkit-filter: grayscale(1);
   /* Webkit Nightlies & Chrome Canary */
   -webkit-transition: all .1s ease-in-out; }
+  
   img:hover {
     filter: none;
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01); }
 
+/* Sep */
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(0, 0, 0) 50%, #20c997 100%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+/* Sep */
+
+.blockquote-wrapper {
+  display: flex;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+/* Blockquote main style */
+.blockquote {
+   position: relative;
+   font-family: 'Barlow Condensed', sans-serif;
+   max-width:fit-content;
+   margin: 80px auto;
+   align-self: center;
+}
+.blockquote span{
+  font-family: 'Abril Fatface', cursive;
+   position: relative; /* for pseudos */
+   color: #20c997;
+   font-size: 1.7rem;
+   font-weight: normal;
+   line-height: 1;
+   margin: 0;
+
+   padding: 5px;
+
+}
+
+/* Blockquote header */
+.blockquote h3 {
+   font-family: 'Abril Fatface', cursive;
+   position: relative; /* for pseudos */
+   color: #20c997;
+   font-size: 2.0rem;
+   font-weight: normal;
+   line-height: 1;
+   margin: 0;
+   border: 2px solid #fff;
+   border: solid 2px;
+   border-radius:20px;
+   padding: 25px;
+}
+
+/* Blockquote right double quotes */
+.blockquote h3:after {
+   content:"";
+   position: absolute;
+   border: 2px solid #20c997;
+   border-radius: 0 50px 0 0;
+   width: 60px;
+   height: 60px;
+   bottom: -62px;
+   left: 50px;
+   border-bottom: none;
+   border-left: none;
+   z-index: 3; 
+}
+
+.blockquote h3:before {
+   content:"";
+   position: absolute;
+   width: 80px;
+   border: 6px solid #151515;
+   bottom: -3px;
+   left: 50px;
+   z-index: 2;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 500px) {
+   .blockquote h3 {
+       font-size: 1.5rem;
+       line-height: 1.2;
+  }
+
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+   position: relative;
+   color: #ffffff;
+   font-size: 1.3rem;
+   font-weight: 400;
+   line-height: 1.2;
+   margin: 0;
+   padding-top: 15px;
+   z-index: 1;
+   margin-left:150px;
+   padding-left:12px;
+}
+
+
+.blockquote h4:first-letter {
+ margin-left:-12px;
+}
+
+
+.blockquote1 {
+  margin-top: 5%;
+	font-weight: 100;
+	font-size: 2rem;
+	max-width: 600px;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding: 2rem;
+  left: 5%;
+}
+
+.blockquote1:before,
+.blockquote1:after {
+	position: absolute;
+	color: #f1efe6;
+	font-size: 7rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+.blockquote1:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+
+.blockquote1:after {
+	content: '”';
+	right: -5rem;
+	bottom: 1rem;
+}
+
+.cite1 {
+	line-height: 3;
+	text-align: center;
+  margin-bottom: 5%;
+
+}
+
+@media only screen and (max-width: 500px) {
+  .blockquote1{
+    margin-top: 50%;
+  }
+
+  .blockquote{
+    margin-top: 70%;
+  }
+}
