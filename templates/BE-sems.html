@@ -107,10 +107,23 @@
                 <h2 class="site-section-heading text-center">{{ sem_no }}<sup>th</sup> Semester</h2>
                 {% endif %}
               </div>
+              
             </div>
           </div>
           
-        </div>        
+        </div> 
+        <div style="text-align: right;">
+              {% if sem_no==3 %}
+              <button class="btn-primary" onclick="location.href='/BE/{{ sem_no+1 }}'">Next Sem</button>
+              
+              {% elif sem_no==7 %}
+
+              <button class="btn-primary" onclick="location.href='/BE/{{ sem_no-1 }}'">Prev Sem</button>
+              {% else %}
+              <button class="btn-primary" onclick="location.href='/BE/{{ sem_no-1 }}'">Prev Sem</button>
+              <button class="btn-primary" onclick="location.href='/BE/{{ sem_no+1 }}'">Next Sem</button>
+              {% endif %}
+        </div>       
         <div class="row">
           <!-- For starts-->
           {% for link,name in zip(links,names) %}

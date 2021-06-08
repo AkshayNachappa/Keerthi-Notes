@@ -1333,7 +1333,6 @@ h1 {
 
 /* Blockquote header */
 .blockquote h3 {
-   font-family: 'Abril Fatface', cursive;
    position: relative; /* for pseudos */
    color: #20c997;
    font-size: 2.0rem;
