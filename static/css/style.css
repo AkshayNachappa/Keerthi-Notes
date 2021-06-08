@@ -1313,13 +1313,13 @@ h1 {
 /* Blockquote main style */
 .blockquote {
    position: relative;
-   font-family: 'Barlow Condensed', sans-serif;
+   
    max-width:fit-content;
    margin: 80px auto;
    align-self: center;
 }
 .blockquote span{
-  font-family: 'Abril Fatface', cursive;
+  
    position: relative; /* for pseudos */
    color: #20c997;
    font-size: 1.7rem;
