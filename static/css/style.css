@@ -1257,7 +1257,7 @@ body {
 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, rgb(0, 0, 0) 50%, #20c997 90%);
+  background-image: linear-gradient(-60deg, rgb(0, 0, 0) 50%, #20c997 97%);
   bottom:0;
   left:-50%;
   opacity:.5;
@@ -1305,17 +1305,19 @@ h1 {
 /* Sep */
 
 .blockquote-wrapper {
+  margin-top: -22%;
   display: flex;
-  height: 100vh;
+  height: 120vh;
   padding: 0 20px;
+  
 }
 
 /* Blockquote main style */
 .blockquote {
-   position: relative;
-   
-   max-width:fit-content;
-   margin: 80px auto;
+   position: absolute;
+   margin-top: 0%;
+   margin-right: 40%;
+   max-width: fit-content;
    align-self: center;
 }
 .blockquote span{
@@ -1369,14 +1371,8 @@ h1 {
    left: 50px;
    z-index: 2;
 }
-
-/* increase header size after 600px */
-@media all and (min-width: 500px) {
-   .blockquote h3 {
-       font-size: 1.5rem;
-       line-height: 1.2;
-  }
-
+#keerthi-pic{
+  height: 50%;
 }
 
 /* Blockquote subheader */
@@ -1403,12 +1399,13 @@ h1 {
   margin-top: 5%;
 	font-weight: 100;
 	font-size: 2rem;
-	max-width: 600px;
+	max-width: 500px;
 	line-height: 1.4;
 	position: relative;
 	margin: 0;
 	padding: 2rem;
   left: 5%;
+  margin-right: 20%;
 }
 
 .blockquote1:before,
@@ -1422,13 +1419,13 @@ h1 {
 
 .blockquote1:before {
 	content: '“';
-	left: -5rem;
+	left: -4rem;
 	top: -2rem;
 }
 
 .blockquote1:after {
 	content: '”';
-	right: -5rem;
+	right: -4rem;
 	bottom: 1rem;
 }
 
@@ -1436,15 +1433,63 @@ h1 {
 	line-height: 3;
 	text-align: center;
   margin-bottom: 5%;
+  padding-top: 5%;
 
 }
 
 @media only screen and (max-width: 500px) {
   .blockquote1{
-    margin-top: 50%;
+    margin-top: -600%;
+    padding-top: -500%;
+    font-size: 1.3rem;
+    width: 70%;
+    margin-left: 14%;
+    padding: 0%;
   }
 
   .blockquote{
-    margin-top: 70%;
+    margin-top: -350%;
+    vertical-align: top;
+  }
+  .blockquote h3{
+    font-size: 1.5rem;
+    
+  }
+    
+  
+  .keerthi-pic{
+    align-self: center;
+    width: 100%;
+    
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .blockquote-wrapper{
+    height: 100vh;
+    width: 100%;
+    
+  }
+  .blockquote{
+    margin-top: 60%;
+    width: 100%;
+  }
+  .blockquote h3{
+    font-size: 1.5rem;
+  }
+  .blockquote span{
+    font-size: 1.4rem;
+  }
+  .blockquote1{
+    margin-top: 60%;
+    width: 200%;
+    margin-left: 0%;
+  }
+  .cite1{
+    text-align: right;
+  }
+  .keerthi-pic{
+    width: 90%;
   }
 }
