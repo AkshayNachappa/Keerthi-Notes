@@ -7,7 +7,8 @@ sem4 = ['https://drive.google.com/viewerng/viewer?embedded=true&url=https://Aksh
 sem5 = ['https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/5th_sem/Analog_and_Digital_Communications.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/5th_sem/Antennas_and_Wave_Propagation.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/5th_sem/Control_Systems.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/5th_sem/Digital_Signal_Processing.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/5th_sem/Microprocessors_Systems.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/5th_sem/Operating_Systems.pdf']
 sem6 = ['https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/6th_sem/Advanced_Communication_and_Coding_Theory.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/6th_sem/Data_Structures_Using_CPP.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/6th_sem/Digital_Design_using_Verilog_HDL.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/6th_sem/Digital_Switching_Systems.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/6th_sem/Embedded_Systems.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/6th_sem/Image_Processing.pdf']
 sem7 = ['https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/7th_sem/CMOS_VLSI_Circuits.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/7th_sem/Communication_Networks.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/7th_sem/Internet_of_Things.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/7th_sem/Microwaves_and_Radar.pdf', 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/7th_sem/Wireless_Communications.pdf']
-sems = [sem3,sem4,sem5,sem6,sem7]
+sem8 = ['https://drive.google.com/viewerng/viewer?embedded=true&url=https://AkshayNachappa.github.io/Keerthi_Notes_Compressed/8th_sem/Artificial_Intelligence.pdf']
+sems = [sem3,sem4,sem5,sem6,sem7,sem8]
 
 @app.route("/")
 def index():
@@ -23,7 +24,7 @@ def BE():
 
 @app.route("/BE/<int:sem_no>")
 def BE_sems(sem_no):
-    if(sem_no>7 or sem_no<3):
+    if(sem_no>8 or sem_no<3):
         abort(404)
     names = []
     links = sems[sem_no - 3]
